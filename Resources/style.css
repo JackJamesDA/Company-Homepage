@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid steelblue;
+    color: steelblue;
+    height: 84px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    margin-left: 20px;
+    border: 2px steelblue solid;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo a {
+    text-decoration: none;
+    color: steelblue;
+}
+.nav ul {
+  display: flex; 
+  margin-right: 20px; 
+  list-style-type: none;
+  font-family: 'Space Mono';
+}
+
+.nav ul li {
+    margin-left: 20px;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: steelblue;
+    font-size: 1.2rem;
+    border: 2px solid steelblue;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.nav ul li a:hover {
+    color: black;
+    background-color: steelblue;
+}
+
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-image: url(./Images/banner.jpg);
+    background-size: cover;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner h1 {
+    padding-top: 20px;
+    font-family: 'Delicious Handrawn', 'Cursive';
+    letter-spacing: 0.5em;
+    font-size: 2.5rem;
+}
+.banner h2 {
+    font-family: 'Delicious Handrawn', 'Cursive';
+    line-height: 1.4;
+    padding: 40px 20px;
+    letter-spacing: .125em;
+}
+#banner-box {
+    display: flex;
+    background-color: steelblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    
+    padding: 10px 60px;
+    border: 2px solid black;
+    margin-left: 10%;
+    border-radius: 10px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    color: #4682b4;
+    border: 2px solid #4682b4;
+    padding: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #4682b4;
+    width: 100%;
+}
+.product-box {
+    display: flex;    
+    width: 23%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    color:#4682b4;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.product-box h3 {
+    
+    font-family: Tahoma, sans-serif;
+    padding: 5% 0;
+}
+.product-box h5 {
+    padding: 0 20%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 0.8rem;
+}
+
+.product-box img {
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: #4682b4;
+    width: 100%;
+}
+
+#team-header {
+    text-align: center;
+    display: flex;
+    background-color: #4682b4;
+    margin: 40px;
+    font-size: 1.8rem;
+    color: black;
+    padding: 4%;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: center;
+    height: 80%;
+}
+
+.member {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.member h3 {
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.member h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #4682b4;
+}
+
+@media only screen and (max-width: 900px) {
+    #banner-box {
+        width: 65%;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .banner {
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+    #banner-box {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+    #team-header {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .products {
+        background-color: black;
+    }
+    .product-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .product-box {
+        width: 40%;
+    }
+
+    #banner-box {
+        font-size: .75rem;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+}
